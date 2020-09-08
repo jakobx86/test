@@ -1,0 +1,45 @@
+/* stylelint-disable */
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content;
+    }
+
+    &:-moz-placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &:-ms-input-placeholder {
+        @content;
+    }
+}
+
+@mixin mediaHover {
+
+    @media (hover), (min-width: 0\0), (min--moz-device-pixel-ratio: 0) {
+        &:hover {
+            @content;
+        }
+    }
+}
+
+@function em($pixels, $context: $font-size) {
+
+    @return #{$pixels/$context}em;
+}
+
+@mixin clearfix {
+    &::before,
+    &::after {
+        content: "";
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+/* stylelint-enable */

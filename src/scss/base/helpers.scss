@@ -1,0 +1,172 @@
+/*
+  Helpers styles
+*/
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+}
+
+.no-scroll {
+    overflow: hidden;
+    touch-action: none;
+}
+
+.hide-scroll {
+    -ms-overflow-style: none; /* IE 10+ */
+    scrollbar-width: none; /* Firefox */
+
+    &::-webkit-scrollbar { /* chrome based */
+        width: 0; /* ширина scrollbar'a */
+        background: transparent; /* опционально */
+    }
+}
+
+/*
+  Classes modificators
+*/
+
+.inline {
+    display: inline-block;
+}
+
+.h100 {
+    height: 100%;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.o-hidden {
+    overflow: hidden;
+}
+
+.mAuto {
+    margin: auto;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+*:focus {
+    outline: none;
+}
+
+.half {
+    width: 50%;
+}
+
+.vertical-align {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.visually-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.fit-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.center-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.inherit-size {
+    width: inherit;
+    height: inherit;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.bolder {
+    font-weight: bolder;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.heavy {
+    font-weight: 800;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clearfix {
+
+    @include clearfix();
+}
+
+.clear,
+.row {
+    &::after {
+        content: "";
+        clear: both;
+        display: block;
+        visibility: hidden;
+        height: 0;
+    }
+}

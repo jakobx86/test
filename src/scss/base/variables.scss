@@ -1,0 +1,35 @@
+
+$font-size: 16;
+
+// Paths
+// -------------------------
+$imgPath:                   '/img';
+$fontPath:                   '/fonts';
+
+//Colors
+// -------------------------
+
+// Form
+// -------------------------
+$cm-error: #b50c00;
+$cm-success: #00ab1a;
+
+// Scaffolding
+// -------------------------
+$white: #fff;
+$black: #000;
+
+// Links
+// -------------------------
+//$linkColor:                 $accent-secondary !default;
+//$linkColorHover:            darken($linkColor, 10%) !default;
+
+// Media viewports
+// -------------------------
+$mobile-widths-only: "(max-width: 767px)";
+$tablet-widths:  "(min-width: 768px)";
+$tablet-widths-only: "(min-width: 768px) and (max-width: 1023px)";
+$desktop-widths: "(min-width: 1024px)";
+$touch: "(max-width: 1023px)";
+$md-desktop-width: "(min-width: 1366px)";
+$lg-desktop-widths: "(min-width: 1600px)";

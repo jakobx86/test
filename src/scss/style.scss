@@ -1,0 +1,20 @@
+/* stylelint-disable */
+// Base styles
+@import "base/variables";
+@import "base/mixins";
+@import "base/fonts";
+@import "base/helpers";
+@import "base/base";
+
+
+// Common styles
+@import "common/common";
+@import "common/title";
+@import "common/text";
+
+
+// Code blocks
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/main-nav";
+/* stylelint-enable */
